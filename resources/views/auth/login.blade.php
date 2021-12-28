@@ -52,24 +52,11 @@
     <!-- End Navbar Area -->
 
     <!-- Start Page Title Area -->
-    <div class="page-title-area item-bg-1">
-        <div class="container">
-            <div class="page-title-content">
-                <h2>Log In</h2>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                            <i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>Log In</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Page Title Area -->
 
+    <!-- End Page Title Area -->
+    <br>
+    <br>
+    <br>
     <!-- Start Sign Up Area -->
     <section class="sign-up-area ptb-100">
         <div class="container">
@@ -87,7 +74,7 @@
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control  @error('email') is-invalid @enderror" type="text" name="name" placeholder="{{ __('E-Mail Address') }}" value="{{ old('email') }}" autocomplete="email" autofocus>
+                                        <input class="form-control  @error('email') is-invalid @enderror" type="text" name="email" placeholder="{{ __('E-Mail Address') }}" value="{{ old('email') }}" autocomplete="email" autofocus>
 
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -150,41 +137,7 @@
     <!-- Start Footer Top Area -->
     @include('layouts.footer')
     <!-- Start Footer Bottom Area -->
-    <footer class="footer-bottom-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div>
-                        <p>Copyright © Peru. All Rights Reserved</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <ul class="social-icon">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-pinterest-p"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!-- End Footer Bottom Area -->
 
     <!-- Start Go Top Area -->

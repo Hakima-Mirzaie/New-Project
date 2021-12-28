@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/search', 'WebsiteController@searchTranslator')->name('search-translator');
+Route::get('/profile', 'WebsiteController@profile')->name('profile');
+
 
 Auth::routes();
 

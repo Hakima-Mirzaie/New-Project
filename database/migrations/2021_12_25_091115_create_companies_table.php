@@ -20,7 +20,6 @@ class CreateCompaniesTable extends Migration
             $table->string('email')->unique();
             $table->string('phone_number_1')->unique();
             $table->string('phone_number_2')->unique();
-            $table->string('name');
             $table->text('work_area');
             $table->string('portfolio');
             $table->timestamps();

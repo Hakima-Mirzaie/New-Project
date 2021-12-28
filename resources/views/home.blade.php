@@ -21,7 +21,7 @@
 
                             <h1>I am Looding for a translator in </h1>
 
-                            <form action="">
+                            <form action="/search" method="get">
 
                                 <div class="row">
                                     <div class="col">

@@ -34,17 +34,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Projects</a>
-                                <ul class="dropdown-menu dropdown-style">
-                                    <li class="nav-item">
-                                        <a href="projects.html" class="nav-link">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="projects-details.html" class="nav-link">Projects Details</a>
-                                    </li>
-                                </ul>
-                            </li>
+
 
 
                             <li class="nav-item">
@@ -52,6 +42,11 @@
                             </li>
 
 
+                            @if(\Auth::check())
+                            <li class="nav-item">
+                                <a href="{{ route('profile') }}" class="nav-link">Profile</a>
+                            </li>
+                            @endif
 
                         </ul>
                         <div class="others-option">
@@ -60,11 +55,27 @@
                                 +800-987-65-43
                             </a>
                             <button class="default-btn">
+                                @if(\Auth::check())
+                                <a href="{{ route('logout') }}" style="color: #FFF;" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">Logout</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
 
-
+                                @else
                                 <a href="{{ route('login') }}" style="color: #FFF;">Login</a> / <a href="{{ route('register')}}" style="color: #FFF; ">Register</a>
+
+
+
+                                @endif
+
                             </button>
+
+
+
                         </div>
+
+
                     </div>
                 </div>
             </nav>

@@ -85,6 +85,34 @@
 
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
+
+
+                                        <select name="role" id="" class="from-control" style="width: 100%;">
+                                            <option value="">Choose your Role</option>
+                                            <option value="company">Company</option>
+                                            <option value="individual">Individual</option>
+                                            <option value="translator">Translator</option>
+
+                                        </select>
+
+                                        @error('role')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $role }}</strong>
+                                        </span>
+                                        @enderror
+
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <br>
+
+
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
                                         <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" placeholder="{{ __('Name') }}" value="{{ old('name') }}" required autocomplete="name" autofocus>
                                         @error('name')
                                         <span class="invalid-feedback" role="alert">
