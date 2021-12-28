@@ -1,4 +1,4 @@
-# New-Project
+# How to use
 
 1 - install xampp software first and than composer software
 2 - create datatabase accroding to .evn file (database name is t_db)
